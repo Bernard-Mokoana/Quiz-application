@@ -1,4 +1,3 @@
-/* styles.css */
 * {
   margin: 0;
   padding: 0;
@@ -7,26 +6,29 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #121212;
+  background: linear-gradient(135deg, #3c3a3a, #1b1f1e);
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 20px;
 }
 
 .container {
-  width: 400px;
-  padding: 20px;
-  background-color: #1e1e1e;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  padding: 25px;
+  background: rgba(30, 30, 30, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
-h1,
-h2 {
+h1, h2 {
   margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 ul {
@@ -35,32 +37,61 @@ ul {
 }
 
 li {
-  background-color: #333333;
-  padding: 10px;
+  background: #333333;
+  padding: 15px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
 }
 
 li:hover {
-  background-color: #6200ea;
+  background: #03a9f4;
+  transform: scale(1.05);
+}
+
+li.correct {
+  background: #4caf50;
+  color: white;
+}
+
+li.incorrect {
+  background: #f44336;
+  color: white;
 }
 
 button {
-  padding: 10px;
-  background-color: #6200ea;
+  padding: 12px 20px;
+  font-size: 1rem;
+  background: #03a9f4;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #3700b3;
+  background: #0288d1;
 }
 
 .hidden {
+  display: none;
+}
+
+#timer {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ffeb3b;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+#next-btn {
+  margin-top: 20px;
+}
+
+#next-btn.hidden {
   display: none;
 }
